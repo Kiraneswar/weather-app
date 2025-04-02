@@ -11,7 +11,15 @@
         <div class="weather-app">
             <h1>Weather App</h1>
             <div class="search-box">
-                <input type="text" id="city-input" placeholder="Enter city name">
+                <div class="autocomplete-wrapper">
+                    <input 
+                        type="text" 
+                        id="city-input" 
+                        placeholder="Enter city name"
+                        autocomplete="off"
+                    >
+                    <ul id="city-suggestions" class="city-suggestions"></ul>
+                </div>
                 <button onclick="getWeather()">Search</button>
             </div>
             <div class="weather-info" id="weather-info">
